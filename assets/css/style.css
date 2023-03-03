@@ -1,13 +1,13 @@
 @charset "UTF-8";
 
 :root {
-   --color-01: #ed1b1b;
-   --color-02: #2369e3;
-   --color-03: #063d1e;
-   --color-04: #3fb873;
-   --color-05: #171d19;
+   --color-01: #F227AB;
+   --color-02: #AB04D9;
+   --color-03: #350D8C;
+   --color-04: #2B0A73;
+   --color-05: #5ECAE6;
 
-   --font-padrao: Arial, Helvetica, sans-serif;
+   --font-padrao: 'Poppins', sans-serif;
    --font-secundaria: 'Bebas Neue', cursive;
 }
 
@@ -21,8 +21,10 @@
    box-sizing: border-box;
 }
 
-div {
-   width: 200px;
-   height: 200px;
-   background-color: black;
+.material-symbols-outlined {
+   font-variation-settings:
+   'FILL' 0,
+   'wght' 400,
+   'GRAD' 0,
+   'opsz' 48
 }
