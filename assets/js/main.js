@@ -14,3 +14,7 @@ links.forEach((element, chave, array)=>{
       });
    });
 })
+
+const spanElement = document.querySelector('span.year');
+const year = new Date().getFullYear();
+spanElement.innerHTML=year;
