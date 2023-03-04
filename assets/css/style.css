@@ -96,11 +96,64 @@ main .links > .link.par {
 main .links > .link:hover {
    cursor: pointer;
    transition: all 0.3s;
+   transform: translate(0, -5px);
    background-color: #662be6;
 }
 
 img {
    width: 120px;
+   transition: all .7s;
+}
+img:hover {
+   transition: all .7s;
+   transform: scale(105%);
+}
+
+
+.modal {
+   width: 80%; min-width: 310px; max-width: 550px;
+   height: 400px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: var(--color-03);
+   box-shadow: 0px 0px 20px #000000f5;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+.modal p {
+   font-size: 2rem;
+}
+.modal button {
+   padding: 5px 15px;
+   font-family: var(--font-padrao);
+   font-weight: 600;
+   font-size: 1rem;
+   background-color: var(--color-01);
+   border: none;
+   border-radius: 20px;
+   color: white;
+   cursor: pointer;
+   transition: all .4s;
+}
+.modal button:hover {
+   cursor: pointer;
+   transition: all .4s;
+   transform: scale(105%);
+   background-color: var(--color-02);
+}
+
+/* Manipulations JS */
+.modal {
+   display: none;
+}
+.modal.active {
+   display: flex;
 }
 
 footer p {
